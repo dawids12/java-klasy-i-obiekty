@@ -8,6 +8,7 @@ class Main {
       Scanner scan = new Scanner(System.in);
       int opcja = 10;
       String imie;
+      String data_ur;
       int wiek;
       System.out.println("MENU");
       System.out.println("1 - Dodawanie studenta");
@@ -24,12 +25,16 @@ class Main {
             System.out.println("Podaj wiek:");
             wiek = scan.nextInt();
             scan.nextLine();
-            s.addStudent(new Student(imie, wiek));
+            System.out.println("Podaj date urodzenia:");
+            data_ur = scan.nextLine();
+            s.addStudent(new Student(imie, wiek,data_ur));
+            break;
 
           case 2:
             var students = s.getStudents();
             for(Student current : students) {
             System.out.println(current.ToString());
+            break;
         }
       }
         

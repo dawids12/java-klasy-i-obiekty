@@ -1,3 +1,1 @@
-dawid 20
-marek 30
-kuba 23
+dawid 20 22.22.2222
